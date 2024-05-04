@@ -1,3 +1,7 @@
+<style>
+  @import url('styles.css');
+</style>
+
 <!-- Profile Header -->
 <div align="center">
     <img src="./Assets/Souvik.png" alt="Profile Picture" width="200" class="profile-picture">
