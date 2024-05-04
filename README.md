@@ -107,7 +107,7 @@
 <br>
 
 <!-- Footer -->
-<div class="footer">
+<div class="footer",align="center">
     <img src="./Assets/sakuya-touhou.gif" alt="Footer Image">
     <p>Thanks for visiting my Profile! 😊</p>
 </div>
