@@ -12,14 +12,14 @@
 <!-- About Me Section -->
 # <img src="./Assets/ez_cat.png" width="30" />About Me
 
-<div class="about-section">
-    <div style="float: left; width: 70%;">
-        <br/> 
-        🔭 I’m currently a 2nd year CSE student at SRM University <br/>
-        🤖 I'm interested in frontend development <br/>
-        🤝 Ready to team up for projects :)
-    </div>
-    <img src="./Assets/bongo.gif" alt="Profile Image" class="profile-image" style="float: right; width: 30%;">
+<div style="display: flex; flex-direction: row; align-items: center;">
+  <div style="flex: 70%; margin-right: 20px;">
+    <br/> 
+    🔭 I’m currently a 2nd year CSE student at SRM University <br/>
+    🤖 I'm interested in frontend development <br/>
+    🤝 Ready to team up for projects :)
+  </div>
+  <img src="./Assets/bongo.gif" alt="Profile Image" style="width: 50%; margin-left: 5px;">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -83,6 +83,13 @@
 <div align="center">
     <img align="right" width="" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
     <p>If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="social-links">
         <a href="mailto: souvikdas8426@gmail.com">
             <img align="left" width="80" height="75" alt="Gmail" src="./Assets/Icons/mail.png">
