@@ -1,6 +1,8 @@
+<link rel="stylesheet" href="style.css">
+
 <!-- Profile Header -->
 <div align="center">
-    <img src="./Assets/Souvik.png" alt="Profile Picture" width="200" />
+    <img src="./Assets/Souvik.png" alt="Profile Picture" width="200" class="profile-picture">
     <h1>नमस्ते (Namaste) 🙏🏻, I'm Souvik Ruhidas!</h1>
     <p>Passionate Frontend Developer | Tech Enthusiast | Bike Lover</p>
 </div>
@@ -10,18 +12,17 @@
 <!-- About Me Section -->
 # <img src="./Assets/ez_cat.png" width="30" />About Me
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
+<div class="about-section">
+    <div>
         <br/> 
         🔭 I’m currently a 2nd year CSE student at SRM University <br/>
         🤖 I'm interested in frontend development <br/>
         🤝 Ready to team up for projects :)
     </div>
-    <img src="./Assets/bongo.gif" alt="Profile Image" style="max-width: 40%; height: auto;">
+    <img src="./Assets/bongo.gif" alt="Profile Image" class="profile-image">
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 
 <!-- Skills Section -->
 # <img src="./Assets/workingonit.gif" width="30" />My Skills
@@ -79,10 +80,10 @@
 <!-- Contact Me Section -->
 # <img src="https://emojis.slackmojis.com/emojis/images/1588315024/8823/hyperkitty.gif?1588315024" width="30" />Contact Me:
 
-<div align="center" style="font-family: Arial, sans-serif; font-size: 18px; color: #;">
-    <img align="right" width="340" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
-    <p style="margin-top: 20px;">If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
-    <div style="display: inline-block; margin-top: 20px;">
+<div align="center">
+    <img align="right" width="" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
+    <p>If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
+    <div id="social-links">
         <a href="mailto: souvikdas8426@gmail.com">
             <img align="left" width="80" height="75" alt="Gmail" src="./Assets/Icons/mail.png">
         </a>
@@ -92,8 +93,7 @@
     </div>
     <br>
     <br>
-    <br>
-    <div style="display: inline-block; margin-top: 20px;">
+    <div id="social-links">
         <a href="https://www.instagram.com/inu_sannnnn/">
             <img align="left" width="80" height="75" alt="Instagram" src="./Assets/Icons/instagram.png">
         </a>
@@ -107,7 +107,7 @@
 <br>
 
 <!-- Footer -->
-<div style="text-align: center;">
+<div class="footer">
     <img src="./Assets/sakuya-touhou.gif" alt="Footer Image">
     <p>Thanks for visiting my Profile! 😊</p>
 </div>
