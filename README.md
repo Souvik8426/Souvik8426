@@ -92,6 +92,7 @@
     </div>
     <br>
     <br>
+    <br>
     <div style="display: inline-block; margin-top: 20px;">
         <a href="https://www.instagram.com/inu_sannnnn/">
             <img align="left" width="80" height="75" alt="Instagram" src="./Assets/Icons/instagram.png">
