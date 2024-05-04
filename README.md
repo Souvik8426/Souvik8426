@@ -1,8 +1,3 @@
----
-layout: page
-css: style.css
----
-
 <!-- Profile Header -->
 <div align="center">
     <img src="./Assets/Souvik.png" alt="Profile Picture" width="200" class="profile-picture">
