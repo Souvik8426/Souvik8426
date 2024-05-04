@@ -1,6 +1,6 @@
 <!-- Profile Header -->
 <div align="center">
-    <img src="./Assets/Souvik.jpg" alt="Profile Picture" width="200" style="border-radius: 50%;" />
+    <img src="./Assets/Souvik.png" alt="Profile Picture" width="200" />
     <h1>नमस्ते (Namaste) 🙏🏻, I'm Souvik Ruhidas!</h1>
     <p>Passionate Frontend Developer | Tech Enthusiast | Bike Lover</p>
 </div>
