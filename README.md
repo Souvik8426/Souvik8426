@@ -110,3 +110,6 @@
     <img src="./Assets/sakuya-touhou.gif" alt="Footer Image">
     <p>Thanks for visiting my Profile! 😊</p>
 </div>
+<div style="color: red; font-size: 20px;">
+    This text will be red and have a font size of 20px.
+</div>
