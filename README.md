@@ -82,12 +82,12 @@
 
 <div align="center">
     <img align="right" width="" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <p>If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <div id="social-links">
