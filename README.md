@@ -79,10 +79,10 @@
 <!-- Contact Me Section -->
 # <img src="https://emojis.slackmojis.com/emojis/images/1588315024/8823/hyperkitty.gif?1588315024" width="30" />Contact Me:
 
-<div align="center">
-    <img align="right" width="" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
-    <p>If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
-    <div style="display: inline-block;">
+<div align="center" style="font-family: Arial, sans-serif; font-size: 18px; color: #;">
+    <img align="right" width="340" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
+    <p style="margin-top: 20px;">If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
+    <div style="display: inline-block; margin-top: 20px;">
         <a href="mailto: souvikdas8426@gmail.com">
             <img align="left" width="80" height="75" alt="Gmail" src="./Assets/Icons/mail.png">
         </a>
@@ -92,7 +92,7 @@
     </div>
     <br>
     <br>
-    <div style="display: inline-block;">
+    <div style="display: inline-block; margin-top: 20px;">
         <a href="https://www.instagram.com/inu_sannnnn/">
             <img align="left" width="80" height="75" alt="Instagram" src="./Assets/Icons/instagram.png">
         </a>
