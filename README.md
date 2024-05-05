@@ -77,11 +77,28 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-# <img src="./Assets/pedro.gif" width="30" />My Other Interests
-
+# <img src="./Assets/02_cool.png" width="30" />My Other Interests
+## <img src="./Assets/pedro.gif" width="30" />Music
 <p align="center">
   <img src="https://spotify-github-profile.vercel.app/api/view.svg?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=14232a&interchange=false&bar_color_cover=true">
 </p>
+
+## <img src="./Assets/monke_gamingq.png" width="30" />Gaming
+<div align="center">
+    <img align="right" width="" height="200" alt="GIF" src="./Assets/dance-cs-go.gif">
+    <br><br>
+    <p>I love to play games to get over an exhausting day<br>Reach out to me if you're interested in doing the same<br><br>We can chill together  <img src="./Assets/quad_parrot.gif" width="30" /></p>
+    
+</div>
+<br><br>
+
+## <img src="./Assets/pikachu.gif" width="30" />Motor Sports
+<div align="center">
+    <img align="right" width="" height="200" alt="GIF" src="./Assets/sports-slow.gif">
+    <br><br><br>
+    <p>Apart from games i love to talk about motor sports<br>(＾０＾)</p>
+    
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <br>
