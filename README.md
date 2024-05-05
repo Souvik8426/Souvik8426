@@ -12,14 +12,13 @@
 <!-- About Me Section -->
 # <img src="./Assets/ez_cat.png" width="30" />About Me
 
-<div style="display: flex; flex-direction: row; align-items: center;">
-  <div style="flex: 70%; margin-right: 20px;">
-    <br/> 
-    🔭 I’m currently a 2nd year CSE student at SRM University <br/>
-    🤖 I'm interested in frontend development <br/>
-    🤝 Ready to team up for projects :)
-  </div>
-  <img src="./Assets/bongo.gif" alt="Profile Image" style="width: 50%; margin-left: 5px;">
+<div align="center">
+    <img align="right" width="" height="200" alt="GIF" src="./Assets/bongo.gif">
+    <br><br><br>
+    <p>🔭 I’m currently a 2nd year CSE student at SRM University
+        🤖 I'm interested in frontend development<br>
+        🤝 Ready to team up for projects :)</p>
+    
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -77,19 +76,23 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
+
+# <img src="./Assets/pedro.gif" width="30" />My Other Interests
+
+<p align="center">
+  <img src="https://spotify-github-profile.vercel.app/api/view.svg?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=14232a&interchange=false&bar_color_cover=true">
+</p>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<br>
+
 <!-- Contact Me Section -->
 # <img src="https://emojis.slackmojis.com/emojis/images/1588315024/8823/hyperkitty.gif?1588315024" width="30" />Contact Me:
 
 <div align="center">
     <img align="right" width="" height="340" alt="GIF" src="./Assets/dazai-dazai-osamu.gif">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br>
     <p>If you want to reach out to me about anything, be it some doubt or just to hangout and talk or want to game together just ping me 😉.</p>
-    <br>
-    <br>
     <div id="social-links">
         <a href="mailto: souvikdas8426@gmail.com">
             <img align="left" width="80" height="75" alt="Gmail" src="./Assets/Icons/mail.png">
@@ -107,7 +110,6 @@
         </a>
     </div>
 </div>
-
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <br>
 
@@ -116,3 +118,9 @@
     <img src="./Assets/sakuya-touhou.gif" alt="Footer Image">
     <p>Thanks for visiting my Profile! 😊</p>
 </div>
+
+
+
+
+
+
