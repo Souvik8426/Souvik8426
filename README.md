@@ -119,7 +119,7 @@
         </a>
     </div>
     <div id="social-links">
-        <a href="https://www.instagram.com/inu_sannnnn/">
+        <a href="https://www.instagram.com/souvik_ruhidas/">
             <img align="left" width="80" height="75" alt="Instagram" src="./Assets/Icons/instagram.png">
         </a>
         <a href="https://t.me/Kawaiii_Nekoo">
