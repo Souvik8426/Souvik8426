@@ -80,7 +80,7 @@
 # <img src="./Assets/02_cool.png" width="30" />My Other Interests
 ## <img src="./Assets/pedro.gif" width="30" />Music
 <p align="center">
-  <img src="[https://spotify-github-profile.vercel.app/api/view.svg?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=14232a&interchange=false&bar_color_cover=true](https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)">
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&redirect=true)
 </p>
 
 ## <img src="./Assets/monke_gamingq.png" width="30" />Gaming
