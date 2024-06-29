@@ -80,8 +80,11 @@
 # <img src="./Assets/02_cool.png" width="30" />My Other Interests
 ## <img src="./Assets/pedro.gif" width="30" />Music
 
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&redirect=true)
-
+<div align="center">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=3fh32j4ga8t5t5mlu3r9rhxtk&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true" alt="Spotify GitHub Profile" />
+  </a>
+</div>
 
 ## <img src="./Assets/monke_gamingq.png" width="30" />Gaming
 <div align="center">
