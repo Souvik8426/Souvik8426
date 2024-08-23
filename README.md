@@ -15,7 +15,7 @@
 <div align="center">
     <img align="right" width="" height="200" alt="GIF" src="./Assets/bongo.gif">
     <br><br><br>
-    <p>🔭 I’m currently a 2nd year CSE student at SRM University<br>
+    <p>🔭 I’m currently a 3rd year CSE student at SRM University<br>
         🤖 I'm interested in frontend development<br>
         🤝 Ready to team up for projects :)</p>
     
