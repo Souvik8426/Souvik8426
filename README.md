@@ -6,7 +6,7 @@
 
   #### 🚀 Frontend Developer & CS Student @ SRM University
 
-  [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://souvik8426.netlify.app/)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://imakewebsites.in/)
 
   <div style="display: flex; gap: 10px; justify-content: center;">
     <a href="mailto:souvikdas8426@gmail.com">
