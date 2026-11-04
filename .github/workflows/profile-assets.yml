@@ -1,0 +1,94 @@
+name: Build pixel profile assets
+
+# Generates every dynamic image used by README.md and publishes them to the
+# `output` branch. Each generator may fail on its own (they are third-party
+# actions hitting the GitHub API); when one does, the file from the previous
+# run is kept so the README never shows a broken image.
+
+on:
+  schedule:
+    - cron: "17 */12 * * *" # twice a day
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pixel stats cards (pixel-profile)
+        id: pixel
+        continue-on-error: true
+        uses: LuciNyan/pixel-profile/action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            dist/pixel-stats-dark.png?username=${{ github.repository_owner }}&theme=rainbow&screen_effect=true&include_all_commits=true
+            dist/pixel-stats-light.png?username=${{ github.repository_owner }}&theme=fuji&dithering=true&include_all_commits=true
+          crt_outputs: |
+            dist/pixel-stats-crt.png?username=${{ github.repository_owner }}&include_all_commits=true
+
+      - name: Arcade contribution graphs (Pac-Man, Galaga, Breakout, Tetris, Bomberman)
+        id: arcade
+        continue-on-error: true
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: pacman,galaga,breakout,tetris,bomberman
+
+      - name: Snake contribution graph
+        id: snake
+        continue-on-error: true
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Space shooter GIF
+        id: shooter
+        continue-on-error: true
+        uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: dist/space-shooter.gif
+          strategy: random
+          no-commit: true
+
+      - name: Keep previous files for any generator that failed
+        run: |
+          mkdir -p dist
+          if git fetch --depth=1 origin output 2>/dev/null; then
+            git ls-tree --name-only FETCH_HEAD | while read -r f; do
+              if [ ! -e "dist/$f" ]; then
+                echo "keeping previous $f"
+                git show "FETCH_HEAD:$f" > "dist/$f"
+              fi
+            done
+          fi
+          ls -la dist
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report failed generators
+        if: steps.pixel.outcome == 'failure' || steps.arcade.outcome == 'failure' || steps.snake.outcome == 'failure' || steps.shooter.outcome == 'failure'
+        run: |
+          echo "pixel=${{ steps.pixel.outcome }} arcade=${{ steps.arcade.outcome }} snake=${{ steps.snake.outcome }} shooter=${{ steps.shooter.outcome }}"
+          exit 1
