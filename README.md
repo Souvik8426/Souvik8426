@@ -86,16 +86,16 @@ const souvik = {
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Souvik8426&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Souvik8426&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" alt="Top languages" height="170"/>
+  <img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Profile details and contribution graph" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" width="49%"/>
+  <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most committed languages" width="49%"/>
 </div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com/?user=Souvik8426&hide_border=true&theme=tokyonight" alt="GitHub streak" width="70%"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Souvik8426&hide_border=true&theme=tokyo-night&area=true" alt="Contribution activity graph" width="100%"/>
 </div>
 
 ---
