@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<p><img src="./Assets/pixel/avatar.png" width="150" alt="Pixel-art Souvik"/></p>
+<p><img src="./Assets/Souvik.png" width="160" alt="Souvik Ruhidas"/></p>
 
 <p><a href="https://imakewebsites.in/"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=2800&pause=900&color=39FF14&center=true&vCenter=true&width=640&height=40&lines=%3E+LOADING+PLAYER+1...;%3E+CLASS%3A+FRONTEND+DEVELOPER;%3E+SKILLS%3A+REACT+%2F+TS+%2F+TAILWIND+%2F+NEXT;%3E+SIDE+QUEST%3A+FLUTTER+%2B+FIREBASE;%3E+PRESS+START+TO+COLLABORATE" alt="Player 1 loading"/></a></p>
 

@@ -6,10 +6,9 @@ Outputs (all written to Assets/pixel/):
   title-<slug>.svg    pixel-font section titles
   divider.svg         animated pixel divider
   footer.svg          "thanks for playing" footer with blinking PRESS START
-  avatar.png          pixelated version of Assets/Souvik.png
 
 Run from the repository root:  python3 scripts/pixel_art.py
-Requires Pillow only for the avatar (pip install pillow).
+No dependencies beyond the Python standard library.
 """
 
 from __future__ import annotations
@@ -281,34 +280,6 @@ def footer() -> str:
     return svg(W, H, "".join(body), "Thanks for playing! Press start to collaborate")
 
 
-# --------------------------------------------------------------------------
-# Pixel avatar
-# --------------------------------------------------------------------------
-def avatar() -> None:
-    from PIL import Image
-
-    src = Image.open(ROOT / "Assets" / "Souvik.png").convert("RGBA")
-    w, h = src.size
-    # tighter crop around the subject
-    crop = src.crop((int(w * 0.20), int(h * 0.17), int(w * 0.80), int(h * 0.77)))
-    small = crop.resize((60, 60), Image.LANCZOS)
-    alpha = small.getchannel("A").point(lambda a: 255 if a > 128 else 0)
-    rgb = small.convert("RGB").quantize(colors=24, method=Image.Quantize.MEDIANCUT).convert("RGB")
-    # stepped circular mask
-    mask = Image.new("L", small.size, 0)
-    r = small.size[0] / 2
-    for yy in range(small.size[1]):
-        for xx in range(small.size[0]):
-            if (xx + 0.5 - r) ** 2 + (yy + 0.5 - r) ** 2 <= r * r:
-                mask.putpixel((xx, yy), 255)
-    from PIL import ImageChops
-
-    alpha = ImageChops.multiply(alpha, mask)
-    out = rgb.convert("RGBA")
-    out.putalpha(alpha)
-    out.resize((280, 280), Image.NEAREST).save(OUT / "avatar.png", optimize=True)
-
-
 SECTIONS = {
     "whoami": ("WHOAMI", CYAN),
     "stack": ("TECH STACK", MAGENTA),
@@ -325,7 +296,6 @@ def main() -> None:
     (OUT / "footer.svg").write_text(footer())
     for slug, (text, accent) in SECTIONS.items():
         (OUT / f"title-{slug}.svg").write_text(title(text, accent))
-    avatar()
     print("wrote", ", ".join(sorted(p.name for p in OUT.iterdir())))
 
 
