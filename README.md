@@ -71,10 +71,10 @@ const player1 = {
 
 | | Project | What it does | Stack |
 | :-: | :-- | :-- | :-- |
-| 🕹️ | [**Corenyth**](https://github.com/Souvik8426/Corenyth) | Cross-platform app built because existing apps didn't cut it, so I wrote my own. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) |
+| 🕹️ | [**Corenyth**](https://corenyth.in/) | Cross-platform app built because existing apps didn't cut it, so I wrote my own. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) [![Live](https://img.shields.io/badge/live-corenyth.in-39FF14?style=flat-square)](https://corenyth.in/) |
 | 📈 | [**Allexor**](https://allexor.com/) | Website for Allexor, a digital growth agency offering social media, performance marketing, web development and design. | ![TypeScript](https://img.shields.io/badge/TS-3178C6?style=flat-square&logo=typescript&logoColor=white) [![Live](https://img.shields.io/badge/live-allexor.com-39FF14?style=flat-square)](https://allexor.com/) |
 | 🤖 | [**HighOnAI**](https://www.highonai.in/) | Website for HighOnAI, a Bengaluru community for people building with AI: demo nights, paper clubs and build sprints. | [![Live](https://img.shields.io/badge/live-highonai.in-39FF14?style=flat-square)](https://www.highonai.in/) |
-| 🌐 | [**imakewebsites**](https://imakewebsites.in/) | My portfolio site. | ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) |
+| 🌐 | [**imakewebsites**](https://imakewebsites.in/) | My portfolio site. | ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) [![Live](https://img.shields.io/badge/live-imakewebsites.in-39FF14?style=flat-square)](https://imakewebsites.in/) |
 
 
 <h3><img src="./Assets/pixel/title-stats.svg" height="46" alt="Player stats"/></h3>
