@@ -32,7 +32,7 @@ const player1 = {
   class:     "Frontend Developer",
   guild:     "Computer Science @ SRM University (3rd year)",
   mainQuest: ["Component-driven UIs", "Responsive & accessible design", "Pixel-perfect polish"],
-  sideQuest: ["Web3 frontends (MetaMask)", "Cross-platform apps with Flutter", "LLM tooling"],
+  sideQuest: ["Cross-platform apps with Flutter"],
   equipped:  ["TypeScript", "React", "Next.js", "Tailwind CSS", "shadcn/ui"],
   inventory: ["Node.js", "Express", "Firebase", "Supabase", "Flask", "MongoDB", "PostgreSQL"],
   spawnsOn:  ["Vercel", "Netlify"],
@@ -71,21 +71,18 @@ const player1 = {
 
 | | Project | What it does | Stack |
 | :-: | :-- | :-- | :-- |
-| 🕹️ | [**Corenyth**](https://github.com/Souvik8426/Corenyth) | Cross-platform app built because existing apps didn't cut it, so I wrote my own. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) |
-| 🪙 | [**XMetX**](https://github.com/Souvik8426/XMetX_Frontend) | Frontend for a decentralized Web3 talent exchange for bartering professional services, with MetaMask-based deal management. | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TS-3178C6?style=flat-square&logo=typescript&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?style=flat-square&logo=shadcnui&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white) |
-| 🎟️ | [**EventSphere**](https://github.com/Souvik8426/EventSphereBookings) | Responsive app to discover, book and manage events, with a dedicated [Node/Express API](https://github.com/Souvik8426/EventSphereBackend) for Razorpay payments. | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TS-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Express](https://img.shields.io/badge/Express-000?style=flat-square&logo=express&logoColor=white) ![Razorpay](https://img.shields.io/badge/Razorpay-0C2451?style=flat-square&logo=razorpay&logoColor=white) |
-| 🛡️ | [**ML-Guardian**](https://github.com/Souvik8426/ML-Guardian) | LLM hallucination detection. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| 🎧 | [**Spotify MLDA**](https://github.com/Souvik8426/Spotify_MLDA_Frontend) | Spotify data project: Vite frontend with a [Python backend](https://github.com/Souvik8426/Spotify_MLDA_Backend). | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| 🌐 | [**imakewebsites**](https://imakewebsites.in/) | My portfolio site. | ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) |
+| 🕹️ | [**Corenyth**](https://corenyth.in/) | Cross-platform app built because existing apps didn't cut it, so I wrote my own. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) [![Live](https://img.shields.io/badge/live-corenyth.in-238636?style=flat-square&labelColor=30363d)](https://corenyth.in/) |
+| 💘 | [**BeMine**](https://beeemineee.netlify.app/) | Ask someone a question they can't say no to. Write your lines, pick a vibe and share a private link: every "No" gets more dramatic while "Yes" grows, and you see the result. | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TS-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8) ![Netlify](https://img.shields.io/badge/Netlify_Functions-00C7B7?style=flat-square&logo=netlify&logoColor=white) [![Live](https://img.shields.io/badge/live-beeemineee.netlify.app-238636?style=flat-square&labelColor=30363d)](https://beeemineee.netlify.app/) |
+| 📈 | [**Allexor**](https://allexor.com/) | Website for Allexor, a digital growth agency offering social media, performance marketing, web development and design. | ![TypeScript](https://img.shields.io/badge/TS-3178C6?style=flat-square&logo=typescript&logoColor=white) [![Live](https://img.shields.io/badge/live-allexor.com-238636?style=flat-square&labelColor=30363d)](https://allexor.com/) |
+| 🤖 | [**HighOnAI**](https://www.highonai.in/) | Website for HighOnAI, a Bengaluru community for people building with AI: demo nights, paper clubs and build sprints. | [![Live](https://img.shields.io/badge/live-highonai.in-238636?style=flat-square&labelColor=30363d)](https://www.highonai.in/) |
+| 🌐 | [**imakewebsites**](https://imakewebsites.in/) | My portfolio site. | ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) [![Live](https://img.shields.io/badge/live-imakewebsites.in-238636?style=flat-square&labelColor=30363d)](https://imakewebsites.in/) |
 
-<p align="right"><a href="https://github.com/Souvik8426?tab=repositories"><code>&gt; VIEW ALL LEVELS</code></a></p>
 
 <h3><img src="./Assets/pixel/title-stats.svg" height="46" alt="Player stats"/></h3>
 
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-fuji.png" width="49%" alt="Pixel GitHub stats (Fuji theme)"/>
-  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-journey.png" width="49%" alt="Pixel GitHub stats (Journey theme)"/>
+  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-fuji.png" width="100%" alt="Pixel GitHub stats"/>
 </div>
 
 <h3><img src="./Assets/pixel/title-arcade.svg" height="46" alt="Arcade"/></h3>

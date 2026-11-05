@@ -41,7 +41,6 @@ jobs:
           github_token: ${{ env.PIXEL_TOKEN }}
           outputs: |
             dist/pixel-stats-fuji.png?username=${{ github.repository_owner }}&theme=fuji&dithering=true&include_all_commits=true
-            dist/pixel-stats-journey.png?username=${{ github.repository_owner }}&theme=journey&dithering=true&include_all_commits=true
 
       - name: Pixel stats cards (hosted pixel-profile API)
         id: pixel_hosted
@@ -61,8 +60,7 @@ jobs:
               rm -f "$1.tmp"; echo "::warning::could not fetch $1"; rc=1
             fi
           }
-          fetch dist/pixel-stats-fuji.png    "theme=fuji&dithering=true"
-          fetch dist/pixel-stats-journey.png "theme=journey&dithering=true"
+          fetch dist/pixel-stats-fuji.png "theme=fuji&dithering=true"
           exit $rc
 
       - name: Arcade contribution graphs (Pac-Man, Galaga, Breakout, Tetris, Bomberman)
@@ -105,13 +103,6 @@ jobs:
               fi
             done
           fi
-          # if one stats card is still missing, reuse the other so nothing is broken
-          for pair in "fuji journey" "journey fuji"; do
-            set -- $pair
-            if [ ! -e "dist/pixel-stats-$1.png" ] && [ -e "dist/pixel-stats-$2.png" ]; then
-              echo "using pixel-stats-$2.png for $1"; cp "dist/pixel-stats-$2.png" "dist/pixel-stats-$1.png"
-            fi
-          done
           ls -la dist
 
       - name: Publish to the output branch
