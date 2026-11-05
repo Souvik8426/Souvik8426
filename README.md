@@ -84,12 +84,8 @@ const player1 = {
 
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-dark.png"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-light.png"/>
-    <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-dark.png" width="49%" alt="Pixel GitHub stats"/>
-  </picture>
-  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-crt.png" width="49%" alt="CRT GitHub stats"/>
+  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-fuji.png" width="49%" alt="Pixel GitHub stats (Fuji theme)"/>
+  <img src="https://raw.githubusercontent.com/Souvik8426/Souvik8426/output/pixel-stats-journey.png" width="49%" alt="Pixel GitHub stats (Journey theme)"/>
 </div>
 
 <h3><img src="./Assets/pixel/title-arcade.svg" height="46" alt="Arcade"/></h3>

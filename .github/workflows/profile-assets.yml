@@ -40,10 +40,8 @@ jobs:
         with:
           github_token: ${{ env.PIXEL_TOKEN }}
           outputs: |
-            dist/pixel-stats-dark.png?username=${{ github.repository_owner }}&theme=rainbow&screen_effect=true&include_all_commits=true
-            dist/pixel-stats-light.png?username=${{ github.repository_owner }}&theme=fuji&dithering=true&include_all_commits=true
-          crt_outputs: |
-            dist/pixel-stats-crt.png?username=${{ github.repository_owner }}&include_all_commits=true
+            dist/pixel-stats-fuji.png?username=${{ github.repository_owner }}&theme=fuji&dithering=true&include_all_commits=true
+            dist/pixel-stats-journey.png?username=${{ github.repository_owner }}&theme=journey&dithering=true&include_all_commits=true
 
       - name: Pixel stats cards (hosted pixel-profile API)
         id: pixel_hosted
@@ -55,16 +53,16 @@ jobs:
           rc=0
           fetch() {
             # keep the file only if it really is an image
-            if curl -fsSL --retry 3 --retry-delay 10 --max-time 120 -o "$1.tmp" "$base&$2" \
+            if curl -fsSL --retry 5 --retry-all-errors --retry-delay 15 --max-time 120 -o "$1.tmp" "$base&$2" \
                && { [ "$(head -c4 "$1.tmp" | od -An -tx1 | tr -d ' \n')" = "89504e47" ] || grep -q "<svg" "$1.tmp"; }; then
               mv "$1.tmp" "$1"; echo "fetched $1"
             else
+              [ -f "$1.tmp" ] && { echo "unexpected response for $1:"; head -c 200 "$1.tmp"; echo; }
               rm -f "$1.tmp"; echo "::warning::could not fetch $1"; rc=1
             fi
           }
-          fetch dist/pixel-stats-dark.png  "theme=rainbow&screen_effect=true"
-          fetch dist/pixel-stats-light.png "theme=fuji&dithering=true"
-          fetch dist/pixel-stats-crt.png   "theme=crt"
+          fetch dist/pixel-stats-fuji.png    "theme=fuji&dithering=true"
+          fetch dist/pixel-stats-journey.png "theme=journey&dithering=true"
           exit $rc
 
       - name: Arcade contribution graphs (Pac-Man, Galaga, Breakout, Tetris, Bomberman)
@@ -107,6 +105,13 @@ jobs:
               fi
             done
           fi
+          # if one stats card is still missing, reuse the other so nothing is broken
+          for pair in "fuji journey" "journey fuji"; do
+            set -- $pair
+            if [ ! -e "dist/pixel-stats-$1.png" ] && [ -e "dist/pixel-stats-$2.png" ]; then
+              echo "using pixel-stats-$2.png for $1"; cp "dist/pixel-stats-$2.png" "dist/pixel-stats-$1.png"
+            fi
+          done
           ls -la dist
 
       - name: Publish to the output branch
@@ -128,8 +133,9 @@ jobs:
           done
           exit 1
 
-      - name: Report failed generators
+      # A flaky generator only warns (its previous image is kept), so the run
+      # and its email notification fail only when publishing itself fails.
+      - name: Report generators that fell back to the previous image
         if: steps.pixel.outcome == 'failure' || steps.pixel_hosted.outcome == 'failure' || steps.arcade.outcome == 'failure' || steps.snake.outcome == 'failure' || steps.shooter.outcome == 'failure'
         run: |
-          echo "pixel=${{ steps.pixel.outcome }} pixel_hosted=${{ steps.pixel_hosted.outcome }} arcade=${{ steps.arcade.outcome }} snake=${{ steps.snake.outcome }} shooter=${{ steps.shooter.outcome }}"
-          exit 1
+          echo "::warning::Some images kept their previous version: pixel=${{ steps.pixel.outcome }} pixel_hosted=${{ steps.pixel_hosted.outcome }} arcade=${{ steps.arcade.outcome }} snake=${{ steps.snake.outcome }} shooter=${{ steps.shooter.outcome }}"
